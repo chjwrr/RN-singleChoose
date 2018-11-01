@@ -10,7 +10,6 @@ import Render from './render'
 
 export default class SingleChoose extends PureComponent {
 
-   
     constructor(props) {
         super(props)
 
