@@ -14,10 +14,10 @@ export default {
             <FlatList style={styles.container}
                       extraData={this.state}
                       keyExtractor={(item, index) => String(index) }
-                      data={this.state.data}
+                      data={this.props.data}
                       renderItem={(item)=> <ChooseItem item={item}
-                                                      selectIndex={this.state.selectIndex}
-                                                      onItemClick={this.onItemClick.bind(this, item)} />}
+                                                       selectIndex={this.props.selectIndex}
+                                                       onItemClick={this.onItemClick.bind(this, item.index)}/>}
             />
         )
     }

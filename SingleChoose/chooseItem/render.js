@@ -14,8 +14,8 @@ export default {
         return (
             <View>
                 <TouchableOpacity onPress={this.props.onItemClick}>
-                    <Text style={this.props.selectIndex === this.props.item.index ? styles.selectItem : styles.item}>
-                        {this.props.item.item.title}
+                    <Text numberOfLines={1} style={this.props.selectIndex === this.props.item.index ? styles.selectItem : styles.item}>
+                        {this.props.item.item}
                     </Text>
                 </TouchableOpacity>
                 <View style={styles.line}/>

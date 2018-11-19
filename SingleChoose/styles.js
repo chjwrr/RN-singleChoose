@@ -8,6 +8,7 @@ import {whiteColor} from './constValue/colorValue'
 export default StyleSheet.create({
 
     container: {
-        backgroundColor: whiteColor
+        backgroundColor: whiteColor,
+        flex: 1
     }
 })
